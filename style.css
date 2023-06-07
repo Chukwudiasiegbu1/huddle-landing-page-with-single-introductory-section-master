@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --font-fam: 'Poppins', sans-serif;
+    --font:'Open Sans', sans-serif;
+}
+body{
+    background-color: var(--Violet);
+}
+main{
+    background-color: transparent;
+    width: 24em;
+    height: 45.3em;
+    text-align: center;
+    color: #fff;
+}
+.illustration-mockups_container{
+    background: url(./images/bg-mobile.svg) no-repeat;
+    width: 100vw;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.illustration-mockups{
+    width: 19em;
+    padding-top: 3.6em;
+}
+.logo{
+    width: 10.2em;
+    align-self: flex-start;
+    padding-left: 2em;
+    padding-top: 2em;
+    
+}
+h1{
+    font-family: var(--font-fam);
+    font-weight: 600;
+    font-size: 1.5em;
+    padding-left: 2em;
+    padding-right: 2.5em;
+    padding-bottom: 0.5em;
+}
+p{
+    font-family: var(--font);
+    font-size: 1em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-bottom: 1.5em;
+    
+}
+.register_btn{
+    background-color: white;
+    width: 11em;
+    height: 2em;
+    margin-left: 6em;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--Violet);
+    font-family: var(--font-fam);
+    font-weight: 500;
+    font-size: 0.8em
+}
+.social-icons_container{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+    width: 24em ;
+    height: 2em ;
+    background-color: transparent;
+    padding-right: 1em;
+}
+.social-icons_border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.1em solid #fff;
+    border-radius: 100%;
+}
+.facebook{
+    width: 0.8em;
+}
+.twitter{
+    width: 0.8em;
+}
+.instagram{
+    width: 0.8em;
+}
+@media(min-width: 1440px){
+    main{
+        width: 90em;
+        background-color: transparent;
+    }
+    .illustration-mockups_container{
+        background: url(./images/bg-desktop.svg) no-repeat;
+        width: 90em;
+        height: 45em;
+        position: fixed;
+        background-size: 75em;
+        display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    
+    }
+    .illustration-mockups{
+        position: absolute;
+        width: 44.5em;
+        height: 39.7em;
+        padding-top: 11em;
+        padding-left: 2em;
+    
+    }
+    h1{
+        position: absolute;
+        font-size: 2.3em;
+        margin-left: 18.2em;
+        margin-top: 5.8em;
+        padding-right: 7em;
+        text-align: left;
+        line-height: 1.5;
+        
+    }
+    p{position: absolute;
+        margin-top: 21.4em;
+        margin-left: 44em;
+        padding-right: 14.5em;
+        margin-right: 0.3em;
+        text-align: left;   
+    }
+    .register_btn{
+        position: absolute;
+        height: 3em;
+        margin-top: 27em;
+        margin-left: 46.5em;
+        border-radius: 2em;
+        
+    }
+    .register_btn:hover, a:hover{
+        cursor: pointer;
+        background-color: var(--Soft-Magenta);
+        color: #fff;
+    }
+   
+    .social-icons_container{
+        position: absolute;
+        height: 4em;
+        margin-top: 40em;
+        margin-left: 61em;
+        
+    }
+    .social-icons_border{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5em;
+        height: 2.5em;
+        border: 0.1em solid #fff;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    .social-icons_border:hover{
+        border-color: var(--Soft-Magenta);
+    }
+    .facebook{
+        width: 1.2em;
+    }
+    .twitter{
+        width: 1.2em;
+    }
+    .instagram{
+        width: 1.3em;
+    }
+}
